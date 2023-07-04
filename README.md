@@ -14,4 +14,4 @@
 
 ## Notes
 
-- Week 1: Installation and @sign -> In Progress
+- Week 1: Installation and @sign -> Completed Part 0 and Part 1
