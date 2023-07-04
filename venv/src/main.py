@@ -25,12 +25,11 @@ def main() -> None:
         vsync=True,
     ) as context:
         root_console = tcod.console.Console(screen_width, screen_height, order="F")
+
         while True:
-            root_console.print(x=player_x, y=player_y, string="@")
-
-            context.present(root_console)
-
             root_console.clear()
+            root_console.print(x=player_x, y=player_y, string="@")
+            context.present(root_console)
 
             for event in tcod.event.wait():
                 action = event_handler.dispatch(event)
